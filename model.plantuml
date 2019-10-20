@@ -1,0 +1,26 @@
+@startuml
+
+class PoliticalCommunity [[java:ch.aaap.assignment.model.PoliticalCommunity]] {
+	String number
+	String name
+	String shortName
+	LocalDate lastUpdate
+}
+
+class Canton [[java:ch.aaap.assignment.model.Canton]] {
+	String code
+	String name
+}
+
+class PostalCommunity [[java:ch.aaap.assignment.model.PostalCommunity]] {
+	String zipCode
+	String zipCodeAddition
+	String name
+}
+
+class District [[java:ch.aaap.assignment.model.District]] {
+	String number
+	String name
+}
+
+@enduml

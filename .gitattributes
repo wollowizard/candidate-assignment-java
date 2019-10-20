@@ -6,6 +6,7 @@
 *.jpg binary
 *.gif binary
 *.jar binary
+*.xlsx binary
 
 # for more details see:
 # https://help.github.com/en/articles/dealing-with-line-endings
