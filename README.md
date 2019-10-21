@@ -37,7 +37,7 @@ Fromat your source code additions according [Google Style Guide for Java](https:
 When looking at the 2 CSV's, describe some other "interesting" facts you get out of your data set's.
 
 ## Hand in the assignment :shipit:
-If you are happy with your solution and all provided tests are passing please create a new pull request
+If you are happy with your solution and all provided tests are passing please create a new pull request. Please put your full name in the PR comment, so we can map it to your application.
 
 ## Questions :question:
 If you have any need help or have have any questions at all please don’t hesitate to contact us. We are here to help! :mailbox: <devs@3ap.ch>
