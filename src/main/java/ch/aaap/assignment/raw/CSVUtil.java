@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
@@ -28,7 +29,7 @@ public class CSVUtil {
   public static Set<CSVPoliticalCommunity> getPoliticalCommunities() {
     try {
       InputStream is = CSVUtil.class.getResourceAsStream(POLITICAL_COMMUNITY_FILE);
-      Reader reader = new InputStreamReader(is);
+      Reader reader = new InputStreamReader(is, StandardCharsets.UTF_8);
       CSVParser parser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader());
       DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
