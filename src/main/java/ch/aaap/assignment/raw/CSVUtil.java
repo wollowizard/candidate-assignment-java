@@ -61,7 +61,7 @@ public class CSVUtil {
 
     try {
       InputStream is = CSVUtil.class.getResourceAsStream(POSTAL_COMMUNITY_FILE);
-      Reader reader = new InputStreamReader(is);
+      Reader reader = new InputStreamReader(is, StandardCharsets.UTF_8);
       CSVParser parser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader());
       Set<CSVPostalCommunity> models = new HashSet<>();
       for (final CSVRecord record : parser) {
