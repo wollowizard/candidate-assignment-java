@@ -41,7 +41,7 @@ public class ApplicationTest {
   }
 
   @Test
-  public void returnsCorrectmountOfDistrictsInCanton() {
+  public void returnsCorrectAmountOfDistrictsInCanton() {
     assertEquals(
         12,
         sut.getAmountOfDistrictsInCanton("ZH"),
