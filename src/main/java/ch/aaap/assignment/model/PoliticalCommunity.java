@@ -1,16 +1,17 @@
 package ch.aaap.assignment.model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public interface PoliticalCommunity {
 
-  public String getNumber();
+  String getNumber();
 
-  public String getName();
+  String getName();
 
-  public String getShortName();
+  String getShortName();
 
-  public LocalDate getLastUpdate();
+  LocalDate getLastUpdate();
 
-  // TODO add more features here representing the relations
+  List<PostalCommunity> getPostalCommunities();
 }

@@ -9,13 +9,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Set;
-
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
 /**
- * This is a helper class to read the provided CSV
+ * This is a helper class to read the provided CSV.
  *
  * <p>You don't have adapt anything within this class!
  */
@@ -24,8 +23,13 @@ public class CSVUtil {
   private static final String POLITICAL_COMMUNITY_FILE = "/GDE_from_be-b-00.04-agv-01.xlsx.csv";
   private static final String POSTAL_COMMUNITY_FILE = "/PLZ6_from_do-t-09.02-gwr-37.xlsx.csv";
 
-  private CSVUtil() {}
+  private CSVUtil() {
 
+  }
+
+  /**
+   * Parses political Communities.
+   */
   public static Set<CSVPoliticalCommunity> getPoliticalCommunities() {
     try {
       InputStream is = CSVUtil.class.getResourceAsStream(POLITICAL_COMMUNITY_FILE);
@@ -57,6 +61,9 @@ public class CSVUtil {
     }
   }
 
+  /**
+   * Parses postal communities.
+   */
   public static Set<CSVPostalCommunity> getPostalCommunities() {
 
     try {
