@@ -1,7 +1,6 @@
 package ch.aaap.assignment.model.imp;
 
 import ch.aaap.assignment.model.District;
-import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -19,7 +18,6 @@ public class DistrictImp implements District {
 
   private String number;
   private String name;
-  private Set<String> politicalCommunityIds;
 
 
 }
