@@ -23,6 +23,5 @@ public class PoliticalCommunityImp implements PoliticalCommunity {
   private String name;
   private String shortName;
   private LocalDate lastUpdate;
-  private List<PostalCommunity> postalCommunities;
 
 }

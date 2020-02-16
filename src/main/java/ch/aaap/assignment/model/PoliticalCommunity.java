@@ -12,6 +12,4 @@ public interface PoliticalCommunity {
   String getShortName();
 
   LocalDate getLastUpdate();
-
-  List<PostalCommunity> getPostalCommunities();
 }

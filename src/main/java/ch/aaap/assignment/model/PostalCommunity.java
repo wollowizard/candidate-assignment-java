@@ -7,6 +7,4 @@ public interface PostalCommunity {
   String getZipCodeAddition();
 
   String getName();
-
-  String getPoliticalCommunityNumber();
 }
